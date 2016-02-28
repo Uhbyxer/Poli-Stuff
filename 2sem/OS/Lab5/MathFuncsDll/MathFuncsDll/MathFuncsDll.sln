@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathFuncsDll", "MathFuncsDll\MathFuncsDll.vcxproj", "{1C9503E6-9515-4DA9-B0D5-C4A4E4EC4606}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyExecRefsDll", "MyExecRefsDll\MyExecRefsDll.vcxproj", "{758D4C49-42A3-4361-8459-CF51A11B3F7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C9503E6-9515-4DA9-B0D5-C4A4E4EC4606}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C9503E6-9515-4DA9-B0D5-C4A4E4EC4606}.Debug|Win32.Build.0 = Debug|Win32
+		{1C9503E6-9515-4DA9-B0D5-C4A4E4EC4606}.Release|Win32.ActiveCfg = Release|Win32
+		{1C9503E6-9515-4DA9-B0D5-C4A4E4EC4606}.Release|Win32.Build.0 = Release|Win32
+		{758D4C49-42A3-4361-8459-CF51A11B3F7B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{758D4C49-42A3-4361-8459-CF51A11B3F7B}.Debug|Win32.Build.0 = Debug|Win32
+		{758D4C49-42A3-4361-8459-CF51A11B3F7B}.Release|Win32.ActiveCfg = Release|Win32
+		{758D4C49-42A3-4361-8459-CF51A11B3F7B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

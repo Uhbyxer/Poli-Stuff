@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="jade.core.Agent"/>
+<fullyQualifiedTypeName name="java.lang.Runtime"/>
+<fullyQualifiedTypeName name="jade.core.ProfileImpl"/>
+<fullyQualifiedTypeName name="jade.core.Profile"/>
+<fullyQualifiedTypeName name="jade.wrapper.ContainerController"/>
+<fullyQualifiedTypeName name="jade.core.Runtime"/>
+<fullyQualifiedTypeName name="jade.wrapper.AgentController"/>
+<fullyQualifiedTypeName name="examples.bookTrading.BookSellerAgent"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,27 @@
+﻿Построение начато 28.05.2014 15:18:09.
+     1>Проект "D:\Docs\_Politex\3sem\KG\l3\lll\lll\lll.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Debug\lll.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       GenerateTargetFrameworkMonikerAttribute:
+       Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\lll.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt stdafx.cpp /clr:nostdlib 
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\lll.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt AssemblyInfo.cpp lll.cpp /clr:nostdlib 
+         AssemblyInfo.cpp
+         lll.cpp
+     1>lll.cpp(5): warning C4627: #include <stdio.h>: пропущен при поиске использования предкомпилированного заголовка
+                 Добавление директивы в "StdAfx.h" или перестройка предкомпилированного заголовка
+     1>lll.cpp(6): warning C4627: #include <graph.h>: пропущен при поиске использования предкомпилированного заголовка
+                 Добавление директивы в "StdAfx.h" или перестройка предкомпилированного заголовка
+     1>lll.cpp(7): warning C4627: #include <stdlib.h>: пропущен при поиске использования предкомпилированного заголовка
+                 Добавление директивы в "StdAfx.h" или перестройка предкомпилированного заголовка
+     1>lll.cpp(8): warning C4627: #include <conio.h>: пропущен при поиске использования предкомпилированного заголовка
+                 Добавление директивы в "StdAfx.h" или перестройка предкомпилированного заголовка
+     1>lll.cpp(81): fatal error C1010: непредвиденный конец файла во время поиска предкомпилированного заголовка. Возможно, вы забыли добавить директиву "#include "StdAfx.h"" в источник.
+         Создание кода...
+     1>Построение проекта "D:\Docs\_Politex\3sem\KG\l3\lll\lll\lll.vcxproj" завершено (целевые объекты build) с ошибкой.
+
+СБОЙ построения.
+
+Затраченное время: 00:00:04.06

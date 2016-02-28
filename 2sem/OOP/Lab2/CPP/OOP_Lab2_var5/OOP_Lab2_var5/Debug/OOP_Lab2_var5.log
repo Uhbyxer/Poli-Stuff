@@ -1,0 +1,26 @@
+﻿Построение начато 25.02.2014 10:32:17.
+     1>Проект "D:\Docs\_Politex\2sem\OOP\Lab2\CPP\OOP_Lab2_var5\OOP_Lab2_var5\OOP_Lab2_var5.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Debug\OOP_Lab2_var5.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       GenerateTargetFrameworkMonikerAttribute:
+       Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /analyze- /errorReport:prompt OOP_Lab2_var5.cpp /clr:nostdlib 
+         OOP_Lab2_var5.cpp
+     1>d:\docs\_politex\2sem\oop\lab2\cpp\oop_lab2_var5\oop_lab2_var5\oop_lab2_var5.cpp(16): warning C4793: Matrix::Matrix: функция скомпилирована как машинная:
+         	varargs не поддерживаются в /clr
+         Для всех выходных данных обновления не требуется.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Docs\_Politex\2sem\OOP\Lab2\CPP\OOP_Lab2_var5\Debug\OOP_Lab2_var5.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\OOP_Lab2_var5.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Docs\_Politex\2sem\OOP\Lab2\CPP\OOP_Lab2_var5\Debug\OOP_Lab2_var5.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\OOP_Lab2_var5.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         OOP_Lab2_var5.vcxproj -> D:\Docs\_Politex\2sem\OOP\Lab2\CPP\OOP_Lab2_var5\Debug\OOP_Lab2_var5.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Docs\_Politex\2sem\OOP\Lab2\CPP\OOP_Lab2_var5\Debug\OOP_Lab2_var5.exe;#1" /manifest Debug\OOP_Lab2_var5.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Файл "Debug\OOP_Lab2_var5.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\OOP_Lab2_var5.lastbuildstate".
+     1>Построение проекта "D:\Docs\_Politex\2sem\OOP\Lab2\CPP\OOP_Lab2_var5\OOP_Lab2_var5\OOP_Lab2_var5.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:05.62

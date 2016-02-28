@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище WMSModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cells">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Width" Type="numeric" Precision="18" Scale="3" />
+    <Property Name="Height" Type="numeric" Precision="18" Scale="3" />
+    <Property Name="Depth" Type="numeric" Precision="18" Scale="3" />
+    <Property Name="SizeControl" Type="int" />
+    <Property Name="Amount" Type="numeric" Precision="18" Scale="3" />
+    <Property Name="AmountControl" Type="int" />
+    <Property Name="Stillage" Type="int" />
+    <Property Name="Tier" Type="int" />
+    <Property Name="Position" Type="int" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+    <Property Name="WarehouseID" Type="int" Nullable="false" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CellTypes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Clients">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Width" Type="numeric" Precision="18" Scale="3" />
+    <Property Name="Height" Type="numeric" Precision="18" Scale="3" />
+    <Property Name="Depth" Type="numeric" Precision="18" Scale="3" />
+    <Property Name="Amount" Type="numeric" Precision="18" Scale="3" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="ClientID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Regions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Warehouses">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Cells_CellsTypes">
+    <End Role="CellTypes" Type="Self.CellTypes" Multiplicity="1" />
+    <End Role="Cells" Type="Self.Cells" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CellTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cells">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cells_Regions">
+    <End Role="Regions" Type="Self.Regions" Multiplicity="1" />
+    <End Role="Cells" Type="Self.Cells" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cells">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cells_Warehouses">
+    <End Role="Warehouses" Type="Self.Warehouses" Multiplicity="1" />
+    <End Role="Cells" Type="Self.Cells" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Warehouses">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cells">
+        <PropertyRef Name="WarehouseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Clients">
+    <End Role="Clients" Type="Self.Clients" Multiplicity="1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ClientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Regions">
+    <End Role="Regions" Type="Self.Regions" Multiplicity="1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище WMSModelContainer">
+    <EntitySet Name="Cells" EntityType="Self.Cells" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CellTypes" EntityType="Self.CellTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clients" EntityType="Self.Clients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Regions" EntityType="Self.Regions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Warehouses" EntityType="Self.Warehouses" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Cells_CellsTypes" Association="Self.FK_Cells_CellsTypes">
+      <End Role="CellTypes" EntitySet="CellTypes" />
+      <End Role="Cells" EntitySet="Cells" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cells_Regions" Association="Self.FK_Cells_Regions">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="Cells" EntitySet="Cells" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cells_Warehouses" Association="Self.FK_Cells_Warehouses">
+      <End Role="Warehouses" EntitySet="Warehouses" />
+      <End Role="Cells" EntitySet="Cells" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Clients" Association="Self.FK_Products_Clients">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Regions" Association="Self.FK_Products_Regions">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

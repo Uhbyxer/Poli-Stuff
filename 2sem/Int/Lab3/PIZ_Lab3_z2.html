@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Лабораторна робота №3</title>
+<script language = "JavaScript">
+function validateForm() {
+	var x=document.forms["form1"]["programName"].value;
+	if (x==null || x=="") {
+		alert("Потрібно заповнити назву сторінки для виконання!");
+		return false;
+	}
+	if(x.toLowerCase().indexOf(".asp") < 0) {
+		alert("Неправильне розширення файла !");
+		return false;
+	}
+	document.forms["form1"].action = x;
+	return true;
+}
+</script>
+</head>
+<body>
+<form name = "form1" method="post" onsubmit="return validateForm()">
+Запустити програму на сервері:<br>
+Назва сторінки (*.asp): <input type = "text" name = "programName"><br>
+<hr>
+<input type = "submit" name = "submitBtn">
+<input type = "reset" name = "resetBtn">
+</form>
+</body>
+</html>

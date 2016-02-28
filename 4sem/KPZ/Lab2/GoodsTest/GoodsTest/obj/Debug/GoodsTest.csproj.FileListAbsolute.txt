@@ -1,0 +1,6 @@
+D:\Docs\_Politex\4sem\KPZ\Lab2\GoodsTest\GoodsTest\bin\Debug\GoodsTest.exe.config
+D:\Docs\_Politex\4sem\KPZ\Lab2\GoodsTest\GoodsTest\bin\Debug\GoodsTest.exe
+D:\Docs\_Politex\4sem\KPZ\Lab2\GoodsTest\GoodsTest\bin\Debug\GoodsTest.pdb
+D:\Docs\_Politex\4sem\KPZ\Lab2\GoodsTest\GoodsTest\obj\Debug\GoodsTest.csprojResolveAssemblyReference.cache
+D:\Docs\_Politex\4sem\KPZ\Lab2\GoodsTest\GoodsTest\obj\Debug\GoodsTest.exe
+D:\Docs\_Politex\4sem\KPZ\Lab2\GoodsTest\GoodsTest\obj\Debug\GoodsTest.pdb

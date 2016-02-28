@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dcab03d166cb41698a5a82b1535a9d6d" Name="Diagram1">
+        <EntityTypeShape EntityType="WMSModel.CellTypes" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSModel.Clients" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSModel.Regions" Width="1.5" PointX="0.875" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSModel.Users" Width="1.5" PointX="2.875" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSModel.Warehouses" Width="1.5" PointX="4.625" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSModel.Products" Width="1.5" PointX="6" PointY="3.125" />
+        <AssociationConnector Association="WMSModel.FK_Products_Clients" />
+        <AssociationConnector Association="WMSModel.FK_Products_Regions" />
+        <EntityTypeShape EntityType="WMSModel.Cells" Width="1.5" PointX="8.875" PointY="0.75" />
+        <AssociationConnector Association="WMSModel.FK_Cells_CellsTypes" />
+        <AssociationConnector Association="WMSModel.FK_Cells_Regions" />
+        <AssociationConnector Association="WMSModel.FK_Cells_Warehouses" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

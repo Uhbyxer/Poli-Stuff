@@ -1,0 +1,6 @@
+D:\Docs\_Politex\4sem\KPZ\Lab1\Grynchuk.Taras.RobotChallenge\Grynchuk.Taras.RobotChallenge\bin\Debug\Grynchuk.Taras.RobotChallenge.dll
+D:\Docs\_Politex\4sem\KPZ\Lab1\Grynchuk.Taras.RobotChallenge\Grynchuk.Taras.RobotChallenge\bin\Debug\Grynchuk.Taras.RobotChallenge.pdb
+D:\Docs\_Politex\4sem\KPZ\Lab1\Grynchuk.Taras.RobotChallenge\Grynchuk.Taras.RobotChallenge\bin\Debug\Robot.Common.dll
+D:\Docs\_Politex\4sem\KPZ\Lab1\Grynchuk.Taras.RobotChallenge\Grynchuk.Taras.RobotChallenge\obj\Debug\Grynchuk.Taras.RobotChallenge.csprojResolveAssemblyReference.cache
+D:\Docs\_Politex\4sem\KPZ\Lab1\Grynchuk.Taras.RobotChallenge\Grynchuk.Taras.RobotChallenge\obj\Debug\Grynchuk.Taras.RobotChallenge.dll
+D:\Docs\_Politex\4sem\KPZ\Lab1\Grynchuk.Taras.RobotChallenge\Grynchuk.Taras.RobotChallenge\obj\Debug\Grynchuk.Taras.RobotChallenge.pdb

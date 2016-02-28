@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Лабораторна робота №3</title>
+<script language = "JavaScript">
+function validateForm() {
+	var x=document.forms["form1"]["usr"].value;
+	if (x==null || x=="") {
+		alert("Потрібно заповнити логін !");
+		return false;
+	}
+	var y=document.forms["form1"]["pas"].value;
+	if (y==null || y=="") {
+		alert("Потрібно заповнити пароль !");
+		return false;
+	}
+	if(x.toLowerCase().indexOf("admin") < 0) {
+		alert("Тільки адміністратори мають право відсилати запит на сервер !");
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+<body>
+<form name = "form1" method="post" action="demo_form.asp" onsubmit="return validateForm()">
+Введіть логін та пароль:<br>
+Користувач: <input type = "text" name = "usr"><br>
+Пароль: <input type = "password" name = "pas"><br>
+<hr>
+<input type = "submit" name = "submitBtn">
+<input type = "reset" name = "resetBtn">
+</form>
+</body>
+</html>

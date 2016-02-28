@@ -1,0 +1,24 @@
+﻿Построение начато 07.05.2014 20:16:58.
+     1>Проект "D:\Docs\_Politex\3sem\4M\Lab3\jakobi\jakobi\jakobi\jakobi.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Debug\jakobi.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       GenerateTargetFrameworkMonikerAttribute:
+       Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /analyze- /errorReport:prompt jakobi.cpp /clr:nostdlib 
+         jakobi.cpp
+         Для всех выходных данных обновления не требуется.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Docs\_Politex\3sem\4M\Lab3\jakobi\jakobi\Debug\jakobi.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\jakobi.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Docs\_Politex\3sem\4M\Lab3\jakobi\jakobi\Debug\jakobi.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\jakobi.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         jakobi.vcxproj -> D:\Docs\_Politex\3sem\4M\Lab3\jakobi\jakobi\Debug\jakobi.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Docs\_Politex\3sem\4M\Lab3\jakobi\jakobi\Debug\jakobi.exe;#1" /manifest Debug\jakobi.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Файл "Debug\jakobi.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\jakobi.lastbuildstate".
+     1>Построение проекта "D:\Docs\_Politex\3sem\4M\Lab3\jakobi\jakobi\jakobi\jakobi.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:02.55

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Лабораторна робота №3</title>
+<script language = "JavaScript">
+function validateForm() {
+	var x=document.forms["form1"]["surname"].value;
+	if (x==null || x=="") {
+		alert("Потрібно заповнити прізвище !");
+		return false;
+	}
+	x=document.forms["form1"]["resume"].value;
+	if(x.toLowerCase().indexOf(".docx") < 0) {
+		alert("Неправильне розширення файла !");
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+<body>
+<form name = "form1" method="post" action="demo_form.asp" onsubmit="return validateForm()">
+Анкета  претендента на вакансію:<br>
+Прізвище: <input type = "text" name = "surname"><br>
+Ім'я: <input type = "text" name = "name"><br>
+Резюме (*.docx)<input type="file" name="resume" id="resume">
+<hr>
+<input type = "submit" name = "submitBtn">
+<input type = "reset" name = "resetBtn">
+</form>
+</body>
+</html>

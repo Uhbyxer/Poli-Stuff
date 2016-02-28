@@ -1,0 +1,20 @@
+﻿Построение начато 28.05.2014 10:48:38.
+     1>Проект "D:\Docs\_Politex\3sem\4M\Lab2\Gaus\L1\L1\L1.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Debug\L1.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       GenerateTargetFrameworkMonikerAttribute:
+       Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+         Для всех выходных данных обновления не требуется.
+       Link:
+         Для всех выходных данных обновления не требуется.
+         L1.vcxproj -> D:\Docs\_Politex\3sem\4M\Lab2\Gaus\L1\Debug\L1.exe
+       FinalizeBuildStatus:
+         Файл "Debug\L1.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\L1.lastbuildstate".
+     1>Построение проекта "D:\Docs\_Politex\3sem\4M\Lab2\Gaus\L1\L1\L1.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:00.00

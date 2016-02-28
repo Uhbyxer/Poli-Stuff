@@ -1,0 +1,28 @@
+﻿Построение начато 06.05.2014 20:38:32.
+     1>Проект "D:\Docs\_Politex\3sem\4M\Lab2\L3\l3\l3\l3.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Debug\l3.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       GenerateTargetFrameworkMonikerAttribute:
+       Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /analyze- /errorReport:prompt l3.cpp /clr:nostdlib 
+         l3.cpp
+     1>l3.cpp(17): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234): см. объявление "fopen"
+     1>l3.cpp(63): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>l3.cpp(65): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+         Для всех выходных данных обновления не требуется.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Docs\_Politex\3sem\4M\Lab2\L3\l3\Debug\l3.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\l3.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Docs\_Politex\3sem\4M\Lab2\L3\l3\Debug\l3.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\l3.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         l3.vcxproj -> D:\Docs\_Politex\3sem\4M\Lab2\L3\l3\Debug\l3.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Docs\_Politex\3sem\4M\Lab2\L3\l3\Debug\l3.exe;#1" /manifest Debug\l3.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Файл "Debug\l3.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\l3.lastbuildstate".
+     1>Построение проекта "D:\Docs\_Politex\3sem\4M\Lab2\L3\l3\l3\l3.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:01.85

@@ -1,0 +1,5 @@
+Insert into Regions values (1,'Електротехніка')
+Insert into Regions values (2,'Будівельні матеріали')
+Insert into Regions values (3,'Корми для тварин')
+Insert into Regions values (4,'Сигарети')
+Insert into Regions values (5,'Інше')

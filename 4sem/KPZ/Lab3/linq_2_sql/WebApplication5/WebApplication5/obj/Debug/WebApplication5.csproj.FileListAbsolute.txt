@@ -1,0 +1,6 @@
+D:\Docs\_Politex\4sem\KPZ\Lab3\linq_2_sql\WebApplication5\WebApplication5\bin\WebApplication5.dll.config
+D:\Docs\_Politex\4sem\KPZ\Lab3\linq_2_sql\WebApplication5\WebApplication5\bin\WebApplication5.dll
+D:\Docs\_Politex\4sem\KPZ\Lab3\linq_2_sql\WebApplication5\WebApplication5\bin\WebApplication5.pdb
+D:\Docs\_Politex\4sem\KPZ\Lab3\linq_2_sql\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csprojResolveAssemblyReference.cache
+D:\Docs\_Politex\4sem\KPZ\Lab3\linq_2_sql\WebApplication5\WebApplication5\obj\Debug\WebApplication5.dll
+D:\Docs\_Politex\4sem\KPZ\Lab3\linq_2_sql\WebApplication5\WebApplication5\obj\Debug\WebApplication5.pdb

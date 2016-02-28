@@ -1,0 +1,6 @@
+java 2.3
+
+sharp 4 5
+
+https://netbeans.org/kb/docs/web/applets_ru.html
+https://www.youtube.com/watch?v=BVk1-VE1V6o

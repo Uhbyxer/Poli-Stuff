@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251"?>
+</head>
+<body>
+<script type="text/javascript">
+<!-- 
+function ajaxRead(file){ 
+  var xmlObj; 
+  
+  //для Mozilla, Chrome,  Netscape і Safari
+  if(window.XMLHttpRequest){ 
+      xmlObj = new XMLHttpRequest(); 
+  //для Internet Explorer 5+
+  } else if(window.ActiveXObject){ 
+      xmlObj = new ActiveXObject("Microsoft.XMLHTTP");  
+  //нічого не вийде - завершуємо функцію
+  } else { 
+      return; 
+  } 
+  
+  //Опрацювання відповіді 
+  xmlObj.onreadystatechange = function(){ 
+    //pfgbn "завершено", 
+	if(xmlObj.readyState == 4){ 
+       updateObj('xmlData', 
+       xmlObj.responseXML.getElementsByTagName('data')[0].firstChild.data);
+     } 
+    } 
+	
+	//відкриваємо з’єднання  з сервером і вказуємо тип передачі даних GET, URL //файлу і асинхронності 
+    xmlObj.open ('GET', file, true); 
+    //відсилаємо порожній рядок на сервер. Інакше стан об'єкта 
+	//XMLHttpRequest ніколи не стане рівним 4
+	xmlObj.send (''); 
+  }
+
+  //за допомогою getElementById шукає вузол за 
+  //вказаною ID і заміняє його вміст  
+  function updateObj(obj, data){ 
+   document.getElementById(obj).innerHTML = "<b>" + data + "</b>"; 
+  } 
+  //-->
+</script>
+
+<h1>Web-додаток з допомогою технології Ajax</h1> 
+<p>Дана сторінка демонструє використання
+Ajax-технології (Асинхронного Javascript і XML) 
+для обновлення вмісту сторінки зчитуванням
+xml-файла, який знаходиться на сервері. 
+</p> 
+<p id="xmlData"> 
+Для отримання відповіді з серверу перейдіть по ссилці: 
+<a href="data.xml" onclick="ajaxRead('data.xml'); return false">Перегляд data.xml</a> 
+</p> 
+</body>
+</html>

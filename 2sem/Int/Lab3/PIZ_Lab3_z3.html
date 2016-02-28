@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Лабораторна робота №3</title>
+<script language = "JavaScript">
+function validateForm() {
+	var x=document.forms["form1"]["surname"].value;
+	if (x==null || x=="") {
+		alert("Потрібно заповнити прізвище !");
+		return false;
+	}
+	if(document.forms["form1"]["meth1"].checked)
+		document.forms["form1"].method = "get";
+	else
+		document.forms["form1"].method = "post";
+	return true;
+}
+</script>
+</head>
+<body>
+<form name = "form1" action="demo_form.asp" onsubmit="return validateForm()">
+Анкета:<br>
+Прізвище: <input type = "text" name = "surname"><br>
+Ім'я: <input type = "text" name = "name"><br>
+<p><b>Метод:</b><Br>
+<input type="checkbox" name="meth1" value="get"> Використати get<Br>
+<hr>
+<input type = "submit" name = "submitBtn">
+<input type = "reset" name = "resetBtn">
+</form>
+</body>
+</html>

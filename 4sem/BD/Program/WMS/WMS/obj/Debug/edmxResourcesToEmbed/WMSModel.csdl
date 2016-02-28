@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CellTypes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Cells" Relationship="WMSModel.FK_Cells_CellsTypes" FromRole="CellTypes" ToRole="Cells" />
+  </EntityType>
+  <EntityType Name="Clients">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="WMSModel.FK_Products_Clients" FromRole="Clients" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Regions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="WMSModel.FK_Products_Regions" FromRole="Regions" ToRole="Products" />
+    <NavigationProperty Name="Cells" Relationship="WMSModel.FK_Cells_Regions" FromRole="Regions" ToRole="Cells" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Warehouses">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Cells" Relationship="WMSModel.FK_Cells_Warehouses" FromRole="Warehouses" ToRole="Cells" />
+  </EntityType>
+  <EntityContainer Name="WMSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CellTypes" EntityType="Self.CellTypes" />
+    <EntitySet Name="Clients" EntityType="Self.Clients" />
+    <EntitySet Name="Regions" EntityType="Self.Regions" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <EntitySet Name="Warehouses" EntityType="Self.Warehouses" />
+    <EntitySet Name="Products" EntityType="WMSModel.Products" />
+    <AssociationSet Name="FK_Products_Clients" Association="WMSModel.FK_Products_Clients">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Regions" Association="WMSModel.FK_Products_Regions">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <EntitySet Name="Cells" EntityType="WMSModel.Cells" />
+    <AssociationSet Name="FK_Cells_CellsTypes" Association="WMSModel.FK_Cells_CellsTypes">
+      <End Role="CellTypes" EntitySet="CellTypes" />
+      <End Role="Cells" EntitySet="Cells" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cells_Regions" Association="WMSModel.FK_Cells_Regions">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="Cells" EntitySet="Cells" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cells_Warehouses" Association="WMSModel.FK_Cells_Warehouses">
+      <End Role="Warehouses" EntitySet="Warehouses" />
+      <End Role="Cells" EntitySet="Cells" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Width" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Height" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Depth" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="RegionID" Type="Int32" Nullable="false" />
+    <Property Name="ClientID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Clients" Relationship="WMSModel.FK_Products_Clients" FromRole="Products" ToRole="Clients" />
+    <NavigationProperty Name="Regions" Relationship="WMSModel.FK_Products_Regions" FromRole="Products" ToRole="Regions" />
+  </EntityType>
+  <Association Name="FK_Products_Clients">
+    <End Type="WMSModel.Clients" Role="Clients" Multiplicity="1" />
+    <End Type="WMSModel.Products" Role="Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ClientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Regions">
+    <End Type="WMSModel.Regions" Role="Regions" Multiplicity="1" />
+    <End Type="WMSModel.Products" Role="Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Cells">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Width" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Height" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Depth" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="SizeControl" Type="Int32" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="AmountControl" Type="Int32" />
+    <Property Name="Stillage" Type="Int32" />
+    <Property Name="Tier" Type="Int32" />
+    <Property Name="Position" Type="Int32" />
+    <Property Name="TypeID" Type="Int32" Nullable="false" />
+    <Property Name="WarehouseID" Type="Int32" Nullable="false" />
+    <Property Name="RegionID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CellTypes" Relationship="WMSModel.FK_Cells_CellsTypes" FromRole="Cells" ToRole="CellTypes" />
+    <NavigationProperty Name="Regions" Relationship="WMSModel.FK_Cells_Regions" FromRole="Cells" ToRole="Regions" />
+    <NavigationProperty Name="Warehouses" Relationship="WMSModel.FK_Cells_Warehouses" FromRole="Cells" ToRole="Warehouses" />
+  </EntityType>
+  <Association Name="FK_Cells_CellsTypes">
+    <End Type="WMSModel.CellTypes" Role="CellTypes" Multiplicity="1" />
+    <End Type="WMSModel.Cells" Role="Cells" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CellTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cells">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cells_Regions">
+    <End Type="WMSModel.Regions" Role="Regions" Multiplicity="1" />
+    <End Type="WMSModel.Cells" Role="Cells" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cells">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cells_Warehouses">
+    <End Type="WMSModel.Warehouses" Role="Warehouses" Multiplicity="1" />
+    <End Type="WMSModel.Cells" Role="Cells" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Warehouses">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cells">
+        <PropertyRef Name="WarehouseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

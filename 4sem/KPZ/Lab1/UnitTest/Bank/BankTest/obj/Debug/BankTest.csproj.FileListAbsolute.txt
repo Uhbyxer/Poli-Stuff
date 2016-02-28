@@ -1,0 +1,7 @@
+D:\Docs\_Politex\4sem\KPZ\Lab1\UnitTest\Bank\BankTest\bin\Debug\BankTest.dll
+D:\Docs\_Politex\4sem\KPZ\Lab1\UnitTest\Bank\BankTest\bin\Debug\BankTest.pdb
+D:\Docs\_Politex\4sem\KPZ\Lab1\UnitTest\Bank\BankTest\bin\Debug\Bank.dll
+D:\Docs\_Politex\4sem\KPZ\Lab1\UnitTest\Bank\BankTest\bin\Debug\Bank.pdb
+D:\Docs\_Politex\4sem\KPZ\Lab1\UnitTest\Bank\BankTest\obj\Debug\BankTest.csprojResolveAssemblyReference.cache
+D:\Docs\_Politex\4sem\KPZ\Lab1\UnitTest\Bank\BankTest\obj\Debug\BankTest.dll
+D:\Docs\_Politex\4sem\KPZ\Lab1\UnitTest\Bank\BankTest\obj\Debug\BankTest.pdb

@@ -1,0 +1,18 @@
+﻿ clauses
+        person("Vira",female()).
+        person("Taras",male()).
+        person("Ira",female()).
+        person("Dana",female()).
+        person("Andriy",male()).
+        person("Ihor",male()).
+
+
+        parent("Taras","Dana").
+        parent("Taras","Andriy").
+        parent("Ira","Dana").
+        parent("Ira","Andriy").
+
+        parent("Dana","Vira").
+        parent("Ihor","Vira").
+
+

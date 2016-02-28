@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Лабораторна робота №2</title>
+</head>
+<body onload="startCanvas();">
+    Подвійний клік миші - додати фігуру;<br>
+	Клавіша delete - очистити екран.<br>
+	<canvas id="canvas" width="1000" height="1000" ondblclick = "canvasClk()"></canvas>
+	
+    <script language="JavaScript">
+ 		var visible = true; //перемикач між малюванням фігур та очистці екрану
+		var shape = new Array(100); //масив координат фігур по вертикалі
+		var k = 0; //к-сть фігур
+		
+        function startCanvas() {
+            var canvas = document.getElementById('canvas');
+			
+			 // Перевірка чи "бачить" браузер canvas
+            if (canvas.getContext) {
+                var ctx = canvas.getContext('2d'); // Получаємо 2D контекст
+ 				
+              	if(visible) {
+					//збільшуємо координату у для всіх фігур
+					for(var i = 0; i < k; i++) {
+						shape[i] += 5;
+						//якщо вийшли за канву - то малюємо зверху
+						if(shape[i] > canvas.height) shape[i] = 10;
+						//намалювати прямокутник
+						ctx.strokeRect(15+i*60, shape[i], 50, 50);
+					}
+				}		
+				else 
+					ctx.clearRect(0, 0, canvas.width, canvas.height); // Очистка всієї канви
+            }
+			//перемикач: міняємо на протилежний стан
+			visible = !visible;
+			//повторюємо кожні 100 мілісекунд
+			setTimeout("startCanvas()",100);
+        }
+		
+		//подвійний клік на канві
+		function canvasClk() {
+			//ініціалізуємо новий елемент масиву координат
+			shape[k++] = 10;
+		}
+		
+		//подія нажаття клавіші клавіатури
+		window.onkeydown = pressed;
+		function pressed(e) {
+			key = e.keyCode || e.which;
+			//якщо delete - то обнуляємо лічильник фігур
+			if(key == 46) k = 0;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿Построение начато 07.05.2014 21:27:10.
+     1>Проект "D:\Docs\_Politex\3sem\4M\Lab3\zejdel\zejdel\zejdel\zejdel.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Debug\zejdel.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       GenerateTargetFrameworkMonikerAttribute:
+       Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /analyze- /errorReport:prompt zejdel.cpp /clr:nostdlib 
+         zejdel.cpp
+         Для всех выходных данных обновления не требуется.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Docs\_Politex\3sem\4M\Lab3\zejdel\zejdel\Debug\zejdel.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\zejdel.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Docs\_Politex\3sem\4M\Lab3\zejdel\zejdel\Debug\zejdel.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\zejdel.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         zejdel.vcxproj -> D:\Docs\_Politex\3sem\4M\Lab3\zejdel\zejdel\Debug\zejdel.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Docs\_Politex\3sem\4M\Lab3\zejdel\zejdel\Debug\zejdel.exe;#1" /manifest Debug\zejdel.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Файл "Debug\zejdel.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\zejdel.lastbuildstate".
+     1>Построение проекта "D:\Docs\_Politex\3sem\4M\Lab3\zejdel\zejdel\zejdel\zejdel.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:02.15

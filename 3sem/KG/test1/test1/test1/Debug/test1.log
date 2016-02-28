@@ -1,0 +1,16 @@
+﻿Построение начато 28.05.2014 21:46:26.
+     1>Проект "D:\Docs\_Politex\3sem\KG\test1\test1\test1\test1.vcxproj" в узле 2 (целевые объекты build).
+     1>PrepareForBuild:
+         Создание каталога "D:\Docs\_Politex\3sem\KG\test1\test1\Debug\".
+       InitializeBuildStatus:
+         Создание "Debug\test1.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       GenerateTargetFrameworkMonikerAttribute:
+       Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       FinalizeBuildStatus:
+         Файл "Debug\test1.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\test1.lastbuildstate".
+     1>Построение проекта "D:\Docs\_Politex\3sem\KG\test1\test1\test1\test1.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:00.17

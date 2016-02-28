@@ -1,0 +1,5 @@
+D:\Docs\_Politex\3sem\PZMT\Lab5\SocketServer\SocketClient\SocketClient\SocketClient\bin\Debug\SocketClient.exe
+D:\Docs\_Politex\3sem\PZMT\Lab5\SocketServer\SocketClient\SocketClient\SocketClient\bin\Debug\SocketClient.pdb
+D:\Docs\_Politex\3sem\PZMT\Lab5\SocketServer\SocketClient\SocketClient\SocketClient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Docs\_Politex\3sem\PZMT\Lab5\SocketServer\SocketClient\SocketClient\SocketClient\obj\x86\Debug\SocketClient.exe
+D:\Docs\_Politex\3sem\PZMT\Lab5\SocketServer\SocketClient\SocketClient\SocketClient\obj\x86\Debug\SocketClient.pdb

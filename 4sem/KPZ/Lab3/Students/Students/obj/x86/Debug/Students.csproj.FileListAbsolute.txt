@@ -1,0 +1,10 @@
+D:\Docs\_Politex\3sem\PZMT\Lab4\L1\Students\Students\bin\Debug\Students.exe
+D:\Docs\_Politex\3sem\PZMT\Lab4\L1\Students\Students\bin\Debug\Students.pdb
+D:\Docs\_Politex\3sem\PZMT\Lab4\L1\Students\Students\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Docs\_Politex\3sem\PZMT\Lab4\L1\Students\Students\obj\x86\Debug\Students.exe
+D:\Docs\_Politex\3sem\PZMT\Lab4\L1\Students\Students\obj\x86\Debug\Students.pdb
+D:\Docs\_Politex\4sem\KPZ\Lab3\Students\Students\obj\x86\Debug\Students.exe
+D:\Docs\_Politex\4sem\KPZ\Lab3\Students\Students\obj\x86\Debug\Students.pdb
+D:\Docs\_Politex\4sem\KPZ\Lab3\Students\Students\bin\Debug\Students.exe
+D:\Docs\_Politex\4sem\KPZ\Lab3\Students\Students\bin\Debug\Students.pdb
+D:\Docs\_Politex\4sem\KPZ\Lab3\Students\Students\obj\x86\Debug\Students.csprojResolveAssemblyReference.cache

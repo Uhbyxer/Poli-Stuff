@@ -1,0 +1,1 @@
+D:\Docs\_Politex\4sem\KPZ\Lab3\adonet_entity\8\EntityFrameworkExample\EntityFrameworkExample\bin\Debug\EntityFrameworkExample.exe.config
